@@ -1,19 +1,17 @@
 package Tests;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
+import Tp.Villano;
 
 class TestVillano {
 
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void obtenerNombreDelVillanoTest() {
+		Villano villano= new Villano();
+		villano.setNombre("Carmen San Diego");
+		Assert.assertEquals("Carmen San Diego", villano.getNombre());
 	}
+	
 
 }

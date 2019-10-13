@@ -11,19 +11,22 @@ public class Villano{
 	public String getNombre() {
 		return nombre;
 	}
-	public String getSexo() {
-		return sexo;
-	}
-	public List<String> getSeniasParticulares() {
-		return seniasParticulares;
-	}
-	public List<String> getHobbies() {
-		return hobbies;
-	}
-	public List<Pais> getRutaDeescape() {
-		return rutaDeescape;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
+	public void setSeniasParticulares(List<String> seniasParticulares) {
+		this.seniasParticulares = seniasParticulares;
+	}
+
+
+	public List<String>darSeniasParticulares(int cantidadDeSenias) {
+		List<String> caracteristicasDelVillano= null;
+		for(int i=0;i<cantidadDeSenias;i++) {
+			caracteristicasDelVillano.add(seniasParticulares.get(i));
+		}
+		return caracteristicasDelVillano;
+		
+	}
 	
-
 }
