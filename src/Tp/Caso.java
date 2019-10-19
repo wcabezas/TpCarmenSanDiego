@@ -8,7 +8,7 @@ public class Caso {
 	public String objetoRobado;
 	public Pais paisDondeOcurrioElSiniestro;
 	
-	public Boolean seEncuentraPaisEnElPanDeEscape(Pais paisCualquiera) {
+	public Boolean seEncuentraPaisEnElPlanDeEscape(Pais paisCualquiera) {
 		return planDeEscape.contains(paisCualquiera);
 		
 	}
